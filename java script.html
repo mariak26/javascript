@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS</title>
+</head>
+<body>
+<h3>Πράξεις με Javascript</h3>
+	<label>Δώσε τον πρώτο αριθμό:</label>
+	<input type=number min=1 max=10 id="v1">
+	<br>
+	<br>
+	<label>Δώσε τον δεύτερο αριθμό:</label>
+	<input type=number min=1 max=10 id="v2">
+	<br>
+	<br>
+	<button onclick="ypologismos()">Υπολόγισε</button>
+	<br>
+	<br>
+	<label>Πρόσθεση:</label>
+	<input type=number readonly id="ap1">
+	<br>
+	<br>
+	<label>Αφαίρεση:</label>
+	<input type=number readonly id="ap2">
+	<br>
+	<br>
+	<label>Πολλαπλασιασμό:</label>
+	<input type=number readonly id="ap3">
+	<br>
+	<br>
+	<label>Διαίρεση:</label>
+	<input type=number readonly id="ap4">
+	<br>
+	<br>
+	
+	<script>
+	function ypologismos() {
+	var a=Number(document.querySelector("#v1").value);
+	var b=Number(document.querySelector("#v2").value);
+	document.querySelector("#ap1").value=a+b;
+	document.querySelector("#ap2").value=a-b;
+	document.querySelector("#ap3").value=a*b;
+	document.querySelector("#ap4").value=a/b;
+	}
+	</script>
+</body>
+</html>
